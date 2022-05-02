@@ -1,16 +1,18 @@
 export interface ProductListProps {
-    pageId: string;
-    url: string;
-    parent_url: string;
-  }
-  
+	page_id: string;
+	image_url: string;
+	name: string;
+	url: string;
+}
 
 export interface ProductState {
-    data: ProductListProps[];
+	data: ProductListProps[];
 }
-  
+
 export interface ProductStateSelector {
-    product: {
-      data: ProductListProps[];
-    };
-  }
+	product: {
+		loading: boolean;
+		data: ProductListProps[];
+		error: string;
+	};
+}

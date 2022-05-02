@@ -1,10 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
-import PhotoGallary from './pages/PhotoGallary';
+import Gallery from './pages/Gallery';
 
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<PhotoGallary />} />
+      <Route path="/" element={<Gallery />} />
     </Routes>
   );
 };
